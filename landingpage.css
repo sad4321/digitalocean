@@ -10,6 +10,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: #FFFFFF;
+    z-index: 22;
 }
 
 .alerts {
@@ -829,4 +830,241 @@ nav #btn-signin:hover {
 
 
 /* dive-sec */
+.dive-sec{
+    background-image: url(./images/dive-bck.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 2px solid green; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 127px 40px;
+}
+.dive-text h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #000c2a;
+    font-family: 'Epilogue', sans-serif !important;
+}
+.dive-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4d5b7c;
+}
+ .dive-grid{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 3em;
+    padding: 30px ;
+}
+.dive-content{
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    background-color: #F9FAFE;
+    /* width: 314px;
+     height: 314px; */
+    padding: 22px 26px 40px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+}
+.dive-content .dive-head .dive-img1{
+   background-color: #E8E2FC;
+   padding: 10px;
+   
+} 
+.dive-content .dive-head .dive-img2{
+   background-color: #B5FFF1;
+   padding: 10px;
+   
+} 
+.dive-content .dive-head .dive-img3{
+   background-color: #B5FFDB;
+   padding: 10px;
+   
+}
+.dive-content .dive-head span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000c2a;
+    font-family: 'Epilogue', sans-serif !important;
+    padding: 0px 16px;
+}
+.dive-content .dive-head h1{
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #000c2a;
+    font-family: 'Epilogue', sans-serif !important; 
+}
+.dive-content .dive-foot a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000c2a;
+    font-family: 'Epilogue', sans-serif !important;   
+}
+.dive-content .dive-foot a:hover{
+    border-bottom: thin solid #000c2a;
+    transition: 2s ease;
+}
 
+
+
+
+
+/* media-quary-dive-sec */
+
+
+@media(max-width:1179px){
+  .dive-grid{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 3em;
+}  
+}
+.dive-content br{
+     display: none;
+}
+@media(max-width:709px){
+    .dive-sec{
+        padding: 80px 0px;
+    }
+    .dive-text h1{
+    font-size: 24px
+    }
+   .dive-grid{
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 1em;
+}  
+}
+
+
+
+
+
+/* get-sec */
+
+.get-sec{
+    padding: 128px 0px;
+    align-items: center;
+    margin: auto;
+}
+.get-content{
+   
+   background: #B5F6FF;
+   background-image: url(./images/get-bck.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+    width: 1088px;
+    height: 330px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+ 
+}
+.get-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    padding: 50px 0px 0px;
+}
+.get-text h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #000c2a;
+    line-height: 48px;
+}
+.get-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4d5b7c;
+    text-align: center;
+}
+.get-link a{
+    padding: 8px 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #1433D6;
+    border-radius: 20px;
+}
+.get-link a:hover{
+    background-color: #000C79;
+    transition: 2s ease;
+}
+.get-sec .get-te{
+    margin: auto;
+}
+.get-sec .get-te p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #4d5b7c;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+/* .get-sec-media-quary */
+
+@media(max-width:1138px){
+    .get-content{
+        width:806px ;
+      padding: 10px;
+      background-size: contain;
+      background-position: bottom;
+    }
+    .get-texts{
+        /* padding: 10px 0px 0px; */
+    }
+}
+@media(max-width:854px){
+      .get-content{
+        width:606px ;
+      /* padding: 10px; */
+      background-size: contain;
+      background-position: bottom;
+    }
+     .get-texts{
+        padding: 10px 0px 0px;
+    }
+}
+@media(max-width:608px){
+
+       .get-content{
+        width:396px ;
+        height: 306px;
+      /* padding: 10px; */
+    }
+    .get-text h1{
+    font-size: 24px;
+    }
+    .get-sec{
+    padding: 80px 0px;
+    }
+}
+
+
+
+
+
+/* footer-sec */
