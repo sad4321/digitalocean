@@ -642,7 +642,7 @@ nav #btn-signin:hover {
     background-image: linear-gradient(transparent);
      transform: translateY(-0px);
 }
-.card-foot1:hover{
+.card1:hover .card-foot1{
    transform: translateY(-6px);
 }
 .customers-card2{
@@ -680,7 +680,7 @@ nav #btn-signin:hover {
     background-image: linear-gradient(transparent);
      transform: translateY(0px);
 }
-.card-foot2:hover{
+.card2:hover .card-foot2{
    transform: translateY(-6px);
 }
 .customers-card3 {
@@ -1068,3 +1068,38 @@ nav #btn-signin:hover {
 
 
 /* footer-sec */
+.footer-sec{
+    padding: 128px 0px;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    flex-wrap: wrap;
+}
+.foot-list{
+    margin: 16px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.foot-dropdown{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000c2a;
+     
+}
+.foot-list li a{
+    color: #4d5b7c;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.foot-list li a:hover{
+    color: #000c2a;
+}
+.foot-dropdown:hover .foot-list{
+    display: block;
+    position: relative;
+}
